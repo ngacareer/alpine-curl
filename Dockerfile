@@ -5,7 +5,8 @@
 # Docker:  https://hub.docker.com/ngacareer
 # web   :  https://ngacareer.com
 
-FROM alpine
+FROM alpine:3.13
+
 RUN apk --no-cache add curl
 
 RUN printf '%s\n' \
@@ -15,4 +16,6 @@ RUN printf '%s\n' \
   'do' \
   'sleep 15' \
   'done' \
-> /run/entrypoint.sh && chmod a+x /run/entrypoint.sh
+> /usr/local/bin/entrypoint.sh && chmod a+x /usr/local/bin/entrypoint.sh
+
+ENTRYPOINT ["entrypoint.sh"]

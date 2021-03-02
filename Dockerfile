@@ -5,7 +5,7 @@
 # Docker:  https://hub.docker.com/ngacareer
 # web   :  https://ngacareer.com
 
-FROM alpine:3.13
+FROM alpine:3.12
 
 RUN apk --no-cache add curl
 

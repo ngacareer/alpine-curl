@@ -3,8 +3,8 @@
 - Where to get help: <a href="https://forums.docker.com/">the Docker Community Forums</a>, <a href="https://dockr.ly/slack">the Docker Community Slack</a>, or <a href="https://stackoverflow.com/search?tab=newest&amp;q=docker">Stack Overflow</a>
 
 ## Supported tags and respective Dockerfile links
-- <a href="https://github.com/ngacareer/alpine-curl/blob/main/Dockerfile">latest</a>
-
+- <a href="https://github.com/ngacareer/alpine-curl/blob/main/Dockerfile">latest (3.13)</a>
+- <a href="https://github.com/ngacareer/alpine-curl/blob/3.12/Dockerfile">3.12</a>
 ## Quick reference (cont.)
 - Where to file issues <a href="https://github.com/ngacareer/alpine-curl/issues">https://github.com/ngacareer/alpine-curl/issues</a>
 

@@ -7,7 +7,7 @@
 
 FROM alpine:3.13
 
-RUN apk --no-cache add curl
+RUN apk --no-cache add curl tini
 
 RUN printf '%s\n' \
   '#!/bin/sh' \
@@ -18,4 +18,4 @@ RUN printf '%s\n' \
   'done' \
 > /usr/local/bin/entrypoint.sh && chmod a+x /usr/local/bin/entrypoint.sh
 
-ENTRYPOINT ["entrypoint.sh"]
+ENTRYPOINT ["/sbin/tini", "--", "entrypoint.sh"]

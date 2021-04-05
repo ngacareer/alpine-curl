@@ -5,7 +5,7 @@
 # Docker:  https://hub.docker.com/ngacareer
 # web   :  https://ngacareer.com
 
-FROM alpine:3.13
+FROM ngacareer/alpine
 
 RUN apk --no-cache add curl tini
 
